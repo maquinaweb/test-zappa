@@ -1,0 +1,27 @@
+{
+	"dev": {
+		"aws_region": "sa-east-1",
+		"django_settings": "core.settings",
+		"exclude": [
+			"boto3",
+			"botocore",
+			"s3transfer",
+			"concurrent",
+			".env",
+			".venv",
+			".ruff_cache",
+			".vscode",
+			"media"
+		],
+		"profile_name": "mw",
+		"project_name": "test-zappa",
+		"architecture": "arm64",
+		"runtime": "python3.11",
+		"s3_bucket": "test-zappa-dev",
+		"environment_variables": {
+			"CLOUDFRONT_DOMAIN": "d1i5vke9v22ncn.cloudfront.net"
+		},
+		"memory_size": 1024,
+		"apigateway_version": "v2"
+	}
+}
